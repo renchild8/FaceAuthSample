@@ -17,6 +17,8 @@
 		F06C1619234A34610012C990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06C1617234A34610012C990 /* LaunchScreen.storyboard */; };
 		F06C1624234A34610012C990 /* FaceAuthSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06C1623234A34610012C990 /* FaceAuthSampleTests.swift */; };
 		F06C162F234A34610012C990 /* FaceAuthSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06C162E234A34610012C990 /* FaceAuthSampleUITests.swift */; };
+		F0E918FC2352109500509CD1 /* FaceTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E918FB2352109500509CD1 /* FaceTracker.swift */; };
+		F0E918FE235212E900509CD1 /* FaceAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E918FD235212E900509CD1 /* FaceAuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		F06C1630234A34610012C990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F240B3D3E73531ABA0214A56 /* Pods-FaceAuthSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAuthSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceAuthSample/Pods-FaceAuthSample.release.xcconfig"; sourceTree = "<group>"; };
 		FCF01B762DD9576046A9BA5D /* Pods-FaceAuthSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAuthSampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceAuthSampleUITests/Pods-FaceAuthSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F0E918FB2352109500509CD1 /* FaceTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTracker.swift; sourceTree = "<group>"; };
+		F0E918FD235212E900509CD1 /* FaceAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceAuthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 			children = (
 				F06C160E234A34600012C990 /* AppDelegate.swift */,
 				F06C1610234A34600012C990 /* ViewController.swift */,
+				F0E918FB2352109500509CD1 /* FaceTracker.swift */,
+				F0E918FD235212E900509CD1 /* FaceAuthViewController.swift */,
 				F06C1612234A34600012C990 /* Main.storyboard */,
 				F06C1615234A34610012C990 /* Assets.xcassets */,
 				F06C1617234A34610012C990 /* LaunchScreen.storyboard */,
@@ -405,6 +411,8 @@
 			files = (
 				F06C1611234A34600012C990 /* ViewController.swift in Sources */,
 				F06C160F234A34600012C990 /* AppDelegate.swift in Sources */,
+				F0E918FC2352109500509CD1 /* FaceTracker.swift in Sources */,
+				F0E918FE235212E900509CD1 /* FaceAuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +591,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZXF79DK4SH;
 				INFOPLIST_FILE = FaceAuthSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,7 +599,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.renchild.FaceAuthSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -602,6 +611,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZXF79DK4SH;
 				INFOPLIST_FILE = FaceAuthSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -609,7 +619,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.renchild.FaceAuthSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
