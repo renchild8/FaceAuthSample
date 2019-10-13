@@ -59,10 +59,10 @@
 		F06C162A234A34610012C990 /* FaceAuthSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceAuthSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06C162E234A34610012C990 /* FaceAuthSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceAuthSampleUITests.swift; sourceTree = "<group>"; };
 		F06C1630234A34610012C990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F240B3D3E73531ABA0214A56 /* Pods-FaceAuthSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAuthSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceAuthSample/Pods-FaceAuthSample.release.xcconfig"; sourceTree = "<group>"; };
-		FCF01B762DD9576046A9BA5D /* Pods-FaceAuthSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAuthSampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceAuthSampleUITests/Pods-FaceAuthSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F0E918FB2352109500509CD1 /* FaceTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTracker.swift; sourceTree = "<group>"; };
 		F0E918FD235212E900509CD1 /* FaceAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceAuthViewController.swift; sourceTree = "<group>"; };
+		F240B3D3E73531ABA0214A56 /* Pods-FaceAuthSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAuthSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceAuthSample/Pods-FaceAuthSample.release.xcconfig"; sourceTree = "<group>"; };
+		FCF01B762DD9576046A9BA5D /* Pods-FaceAuthSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAuthSampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceAuthSampleUITests/Pods-FaceAuthSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
