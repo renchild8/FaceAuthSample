@@ -103,7 +103,7 @@ extension FaceTracker: AVCaptureVideoDataOutputSampleBufferDelegate {
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         DispatchQueue.main.sync(execute: {
 
-            guard let image = self.convertToImage(from: sampleBuffer), let ciimage = CIImage(image: image) else { return }
+            guard let image = convertToImage(from: sampleBuffer), let ciimage = CIImage(image: image) else { return }
             guard let detector = CIDetector(ofType: CIDetectorTypeFace, context: nil, options: [CIDetectorAccuracy: CIDetectorAccuracyHigh]) else { return }
             guard let feature = detector.features(in: ciimage).first else { return }
 
