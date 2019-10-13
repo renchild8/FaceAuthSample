@@ -21,7 +21,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="353-n1-9xK" kind="show" id="1zO-QL-ku0"/>
+                                    <action selector="tappedLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K03-D6-Oev"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -32,6 +32,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="353-n1-9xK" kind="show" identifier="gotoFaceAuth" id="x4K-ha-9dp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -140,6 +143,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rlr-fn-J7C"/>
                     </view>
+                    <navigationItem key="navigationItem" id="m4e-fa-roX"/>
                     <connections>
                         <outlet property="alertLabel" destination="E61-DC-asV" id="9G6-JF-pFF"/>
                         <outlet property="cameraView" destination="ahc-jR-tVi" id="Kam-A9-JEr"/>
