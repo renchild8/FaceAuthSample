@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CFE15E94EAE8E24D5E4147D /* Pods_FaceAuthSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A69A9A1455D44432A47D931 /* Pods_FaceAuthSampleUITests.framework */; };
+		8CBF9C4A72D25F36D8A5298B /* Pods_FaceAuthSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D480AED75D7BCBB27AE02108 /* Pods_FaceAuthSampleTests.framework */; };
+		9137347E831CF2547D7389F1 /* Pods_FaceAuthSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B536221261D49E92114171B /* Pods_FaceAuthSample.framework */; };
 		F06C160F234A34600012C990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06C160E234A34600012C990 /* AppDelegate.swift */; };
 		F06C1611234A34600012C990 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06C1610234A34600012C990 /* ViewController.swift */; };
 		F06C1614234A34600012C990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06C1612234A34600012C990 /* Main.storyboard */; };
@@ -34,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A1A0521644D58F73B94CA7B /* Pods-FaceAuthSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAuthSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceAuthSampleTests/Pods-FaceAuthSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0A2A27BDFEC63E1ABCC7804D /* Pods-FaceAuthSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAuthSampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceAuthSampleUITests/Pods-FaceAuthSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A69A9A1455D44432A47D931 /* Pods_FaceAuthSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceAuthSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B59254FF486C8CA4D0EE8E5 /* Pods-FaceAuthSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAuthSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceAuthSample/Pods-FaceAuthSample.debug.xcconfig"; sourceTree = "<group>"; };
+		7B536221261D49E92114171B /* Pods_FaceAuthSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceAuthSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D480AED75D7BCBB27AE02108 /* Pods_FaceAuthSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceAuthSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E83E0309A90153511291063B /* Pods-FaceAuthSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAuthSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceAuthSampleTests/Pods-FaceAuthSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		F06C160B234A34600012C990 /* FaceAuthSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceAuthSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06C160E234A34600012C990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F06C1610234A34600012C990 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,8 @@
 		F06C162A234A34610012C990 /* FaceAuthSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceAuthSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06C162E234A34610012C990 /* FaceAuthSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceAuthSampleUITests.swift; sourceTree = "<group>"; };
 		F06C1630234A34610012C990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F240B3D3E73531ABA0214A56 /* Pods-FaceAuthSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAuthSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceAuthSample/Pods-FaceAuthSample.release.xcconfig"; sourceTree = "<group>"; };
+		FCF01B762DD9576046A9BA5D /* Pods-FaceAuthSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAuthSampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceAuthSampleUITests/Pods-FaceAuthSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9137347E831CF2547D7389F1 /* Pods_FaceAuthSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CBF9C4A72D25F36D8A5298B /* Pods_FaceAuthSampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFE15E94EAE8E24D5E4147D /* Pods_FaceAuthSampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19E77FF4745C3747B1365FA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B536221261D49E92114171B /* Pods_FaceAuthSample.framework */,
+				D480AED75D7BCBB27AE02108 /* Pods_FaceAuthSampleTests.framework */,
+				2A69A9A1455D44432A47D931 /* Pods_FaceAuthSampleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		889132315D50A10E58D3528A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B59254FF486C8CA4D0EE8E5 /* Pods-FaceAuthSample.debug.xcconfig */,
+				F240B3D3E73531ABA0214A56 /* Pods-FaceAuthSample.release.xcconfig */,
+				0A1A0521644D58F73B94CA7B /* Pods-FaceAuthSampleTests.debug.xcconfig */,
+				E83E0309A90153511291063B /* Pods-FaceAuthSampleTests.release.xcconfig */,
+				0A2A27BDFEC63E1ABCC7804D /* Pods-FaceAuthSampleUITests.debug.xcconfig */,
+				FCF01B762DD9576046A9BA5D /* Pods-FaceAuthSampleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F06C1602234A34600012C990 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				F06C1622234A34610012C990 /* FaceAuthSampleTests */,
 				F06C162D234A34610012C990 /* FaceAuthSampleUITests */,
 				F06C160C234A34600012C990 /* Products */,
+				889132315D50A10E58D3528A /* Pods */,
+				19E77FF4745C3747B1365FA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F06C1633234A34610012C990 /* Build configuration list for PBXNativeTarget "FaceAuthSample" */;
 			buildPhases = (
+				E6B99C04E8955B293A76BA96 /* [CP] Check Pods Manifest.lock */,
 				F06C1607234A34600012C990 /* Sources */,
 				F06C1608234A34600012C990 /* Frameworks */,
 				F06C1609234A34600012C990 /* Resources */,
+				61A6A77AD1C8BAB58EE1F0BC /* [CP] Embed Pods Frameworks */,
+				F08FBF6423536CE700E8A674 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -149,6 +192,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F06C1636234A34610012C990 /* Build configuration list for PBXNativeTarget "FaceAuthSampleTests" */;
 			buildPhases = (
+				ED3D5E585FC88734B2BF5095 /* [CP] Check Pods Manifest.lock */,
 				F06C161B234A34610012C990 /* Sources */,
 				F06C161C234A34610012C990 /* Frameworks */,
 				F06C161D234A34610012C990 /* Resources */,
@@ -167,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F06C1639234A34610012C990 /* Build configuration list for PBXNativeTarget "FaceAuthSampleUITests" */;
 			buildPhases = (
+				498FE6237AFABEF820B6421C /* [CP] Check Pods Manifest.lock */,
 				F06C1626234A34610012C990 /* Sources */,
 				F06C1627234A34610012C990 /* Frameworks */,
 				F06C1628234A34610012C990 /* Resources */,
@@ -250,6 +295,108 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		498FE6237AFABEF820B6421C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceAuthSampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61A6A77AD1C8BAB58EE1F0BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FaceAuthSample/Pods-FaceAuthSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FaceAuthSample/Pods-FaceAuthSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6B99C04E8955B293A76BA96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceAuthSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED3D5E585FC88734B2BF5095 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceAuthSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F08FBF6423536CE700E8A674 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n  # 自動整形\n  \"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect --format\n  # 静的解析\n  \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F06C1607234A34600012C990 /* Sources */ = {
@@ -430,6 +577,7 @@
 		};
 		F06C1634234A34610012C990 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B59254FF486C8CA4D0EE8E5 /* Pods-FaceAuthSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +596,7 @@
 		};
 		F06C1635234A34610012C990 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F240B3D3E73531ABA0214A56 /* Pods-FaceAuthSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +615,7 @@
 		};
 		F06C1637234A34610012C990 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A1A0521644D58F73B94CA7B /* Pods-FaceAuthSampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +637,7 @@
 		};
 		F06C1638234A34610012C990 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E83E0309A90153511291063B /* Pods-FaceAuthSampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +659,7 @@
 		};
 		F06C163A234A34610012C990 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A2A27BDFEC63E1ABCC7804D /* Pods-FaceAuthSampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +680,7 @@
 		};
 		F06C163B234A34610012C990 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCF01B762DD9576046A9BA5D /* Pods-FaceAuthSampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
