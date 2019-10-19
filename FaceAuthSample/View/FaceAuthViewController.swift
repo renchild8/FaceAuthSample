@@ -2,16 +2,23 @@ import UIKit
 
 class FaceAuthViewController: UIViewController {
 
+    // カメラの映像が映るView
     @IBOutlet weak var cameraView: UIView!
+    // cameraViewに覆いかぶさっているView
     @IBOutlet weak var overlayView: UIView!
-
+    // overlayViewの中心の透明なView
     @IBOutlet weak var centerView: UIView!
+    // アラートを表示するためのLabel
     @IBOutlet weak var alertLabel: UILabel!
 
+    // 顔検出を行うクラス
     private var faceTracker: FaceTracker?
+    // 顔の周りに表示する枠
     private let frameView = UIView()
+    // 顔検出されたときの画像
     private var image = UIImage()
-
+    
+    // APIリクエストを行うクラス
     private let apiRequest = APIRequest()
 
     override func viewDidAppear(_ animated: Bool) {
