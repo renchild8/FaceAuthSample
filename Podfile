@@ -9,7 +9,6 @@ target 'FaceAuthSample' do
   pod 'SwiftLint'
   pod 'Moya/RxSwift'
   pod 'RxSwift'
-  pod 'RxCocoa'
   pod 'SVProgressHUD'
 
   target 'FaceAuthSampleTests' do

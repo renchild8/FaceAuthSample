@@ -7,15 +7,12 @@ PODS:
     - Moya/Core
     - RxSwift (~> 4.0)
   - Result (4.1.0)
-  - RxCocoa (4.5.0):
-    - RxSwift (>= 4.4.2, ~> 4.4)
   - RxSwift (4.5.0)
   - SVProgressHUD (2.2.5)
   - SwiftLint (0.35.0)
 
 DEPENDENCIES:
   - Moya/RxSwift
-  - RxCocoa
   - RxSwift
   - SVProgressHUD
   - SwiftLint
@@ -25,7 +22,6 @@ SPEC REPOS:
     - Alamofire
     - Moya
     - Result
-    - RxCocoa
     - RxSwift
     - SVProgressHUD
     - SwiftLint
@@ -34,11 +30,10 @@ SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
-  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftLint: 5553187048b900c91aa03552807681bb6b027846
 
-PODFILE CHECKSUM: 80fd51bde4342b2632e5ec0c505033d647adb6e7
+PODFILE CHECKSUM: c26e39524daea6ee3077b02eace0d5101b169fea
 
 COCOAPODS: 1.5.3

@@ -1,4 +1,3 @@
-import Foundation
 import Moya
 
 enum Target {
@@ -54,7 +53,7 @@ extension Target: TargetType {
 
     var headers: [String: String]? {
         var header = [
-            "Ocp-Apim-Subscription-Key" : Const.SubscriptionKey
+            "Ocp-Apim-Subscription-Key" : Const.subscriptionKey
         ]
 
         switch self {
