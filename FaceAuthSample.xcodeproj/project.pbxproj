@@ -10,6 +10,13 @@
 		6CFE15E94EAE8E24D5E4147D /* Pods_FaceAuthSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A69A9A1455D44432A47D931 /* Pods_FaceAuthSampleUITests.framework */; };
 		8CBF9C4A72D25F36D8A5298B /* Pods_FaceAuthSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D480AED75D7BCBB27AE02108 /* Pods_FaceAuthSampleTests.framework */; };
 		9137347E831CF2547D7389F1 /* Pods_FaceAuthSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B536221261D49E92114171B /* Pods_FaceAuthSample.framework */; };
+		F059A98E235B60D600D773DA /* FaceDetectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F059A98D235B60D600D773DA /* FaceDetectResponse.swift */; };
+		F059A990235B60F900D773DA /* FaceIdentifyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F059A98F235B60F900D773DA /* FaceIdentifyResponse.swift */; };
+		F059A995235B674D00D773DA /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = F059A994235B674D00D773DA /* Target.swift */; };
+		F059A997235B679600D773DA /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F059A996235B679600D773DA /* Const.swift */; };
+		F05DA4CA235B709900B227B2 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05DA4C9235B709900B227B2 /* APIRequest.swift */; };
+		F05DA4CC235B7AE600B227B2 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05DA4CB235B7AE600B227B2 /* ErrorResponse.swift */; };
+		F05DA4CE235B9B0700B227B2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05DA4CD235B9B0700B227B2 /* HomeViewController.swift */; };
 		F06C160F234A34600012C990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06C160E234A34600012C990 /* AppDelegate.swift */; };
 		F06C1611234A34600012C990 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06C1610234A34600012C990 /* ViewController.swift */; };
 		F06C1614234A34600012C990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06C1612234A34600012C990 /* Main.storyboard */; };
@@ -46,6 +53,13 @@
 		7B536221261D49E92114171B /* Pods_FaceAuthSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceAuthSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D480AED75D7BCBB27AE02108 /* Pods_FaceAuthSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceAuthSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83E0309A90153511291063B /* Pods-FaceAuthSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAuthSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceAuthSampleTests/Pods-FaceAuthSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		F059A98D235B60D600D773DA /* FaceDetectResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectResponse.swift; sourceTree = "<group>"; };
+		F059A98F235B60F900D773DA /* FaceIdentifyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIdentifyResponse.swift; sourceTree = "<group>"; };
+		F059A994235B674D00D773DA /* Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		F059A996235B679600D773DA /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		F05DA4C9235B709900B227B2 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		F05DA4CB235B7AE600B227B2 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		F05DA4CD235B9B0700B227B2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F06C160B234A34600012C990 /* FaceAuthSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceAuthSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06C160E234A34600012C990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F06C1610234A34600012C990 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +130,35 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F059A98C235B60AD00D773DA /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				F059A98D235B60D600D773DA /* FaceDetectResponse.swift */,
+				F059A98F235B60F900D773DA /* FaceIdentifyResponse.swift */,
+				F05DA4CB235B7AE600B227B2 /* ErrorResponse.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		F059A993235B672A00D773DA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F059A994235B674D00D773DA /* Target.swift */,
+				F05DA4C9235B709900B227B2 /* APIRequest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F059A998235B692100D773DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F059A996235B679600D773DA /* Const.swift */,
+				F059A993235B672A00D773DA /* API */,
+				F059A98C235B60AD00D773DA /* Request */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F06C1602234A34600012C990 = {
 			isa = PBXGroup;
 			children = (
@@ -142,9 +185,11 @@
 			isa = PBXGroup;
 			children = (
 				F06C160E234A34600012C990 /* AppDelegate.swift */,
-				F06C1610234A34600012C990 /* ViewController.swift */,
+				F059A998235B692100D773DA /* Model */,
 				F0E918FB2352109500509CD1 /* FaceTracker.swift */,
+				F06C1610234A34600012C990 /* ViewController.swift */,
 				F0E918FD235212E900509CD1 /* FaceAuthViewController.swift */,
+				F05DA4CD235B9B0700B227B2 /* HomeViewController.swift */,
 				F06C1612234A34600012C990 /* Main.storyboard */,
 				F06C1615234A34610012C990 /* Assets.xcassets */,
 				F06C1617234A34610012C990 /* LaunchScreen.storyboard */,
@@ -411,8 +456,15 @@
 			files = (
 				F06C1611234A34600012C990 /* ViewController.swift in Sources */,
 				F06C160F234A34600012C990 /* AppDelegate.swift in Sources */,
+				F059A98E235B60D600D773DA /* FaceDetectResponse.swift in Sources */,
+				F059A990235B60F900D773DA /* FaceIdentifyResponse.swift in Sources */,
 				F0E918FC2352109500509CD1 /* FaceTracker.swift in Sources */,
+				F05DA4CC235B7AE600B227B2 /* ErrorResponse.swift in Sources */,
+				F059A997235B679600D773DA /* Const.swift in Sources */,
+				F05DA4CE235B9B0700B227B2 /* HomeViewController.swift in Sources */,
 				F0E918FE235212E900509CD1 /* FaceAuthViewController.swift in Sources */,
+				F05DA4CA235B709900B227B2 /* APIRequest.swift in Sources */,
+				F059A995235B674D00D773DA /* Target.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

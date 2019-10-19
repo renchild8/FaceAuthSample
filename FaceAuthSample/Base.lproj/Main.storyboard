@@ -25,7 +25,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NNl-HY-4bE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Wwi-NT-Tsc"/>
                             <constraint firstItem="NNl-HY-4bE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jS6-Aw-IjV"/>
@@ -149,11 +149,40 @@
                         <outlet property="cameraView" destination="ahc-jR-tVi" id="Kam-A9-JEr"/>
                         <outlet property="centerView" destination="AQ8-yS-IyV" id="Pow-l9-y4f"/>
                         <outlet property="overlayView" destination="j5Q-h5-sPE" id="LjE-4r-qjO"/>
+                        <segue destination="HRJ-K4-upj" kind="show" identifier="gotoHome" id="WJW-r8-K4j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3P2-go-wKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1017" y="139"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="KGA-e8-jtV">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="HRJ-K4-upj" customClass="HomeViewController" customModule="FaceAuthSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uPZ-sq-ZFX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logged in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKO-8H-QqI">
+                                <rect key="frame" x="149.5" y="323" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BKO-8H-QqI" firstAttribute="centerY" secondItem="KVV-45-3gz" secondAttribute="centerY" id="FU1-Rk-yZQ"/>
+                            <constraint firstItem="BKO-8H-QqI" firstAttribute="centerX" secondItem="KVV-45-3gz" secondAttribute="centerX" id="S3r-PQ-r1D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KVV-45-3gz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uDl-29-X6D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MV9-Bv-7IW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="139"/>
         </scene>
     </scenes>
 </document>

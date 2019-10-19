@@ -11,7 +11,8 @@ class FaceAuthViewController: UIViewController {
     private var faceTracker: FaceTracker?
     private let frameView = UIView()
     private var image = UIImage()
-    private var faceId = ""
+
+    private let apiRequest = APIRequest()
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -46,10 +47,68 @@ class FaceAuthViewController: UIViewController {
         let yIsInFrame = centerView.frame.minY < faceRect.minY && faceRect.maxY < centerView.frame.maxY
 
         if xIsInFrame && yIsInFrame {
-            // stopRunning()
-            // FathAuth
+            stopRunning()
+            faceDetect(image: image)
         }
 
+    }
+
+    func faceDetect(image: UIImage) {
+
+        guard let imageData = image.jpegData(compressionQuality: 1.0) else { return }
+
+        apiRequest.request(target: .detect(imageData: imageData), response: [FaceDetectResponse].self, errorResponse: ErrorResponse.self) { respose in
+            switch respose {
+            case .success(let faceDetectResponse):
+
+                guard let faceId = faceDetectResponse.first?.faceId else {
+                    print("顔認証に失敗しました")
+                    self.startRunning()
+                    return
+                }
+
+                self.faceIdentify(faceId: faceId)
+
+            case .invalid(let errorResponse):
+                print(errorResponse)
+                self.startRunning()
+            case .failure(let error):
+                print(error)
+                self.startRunning()
+            }
+        }
+
+    }
+
+    func faceIdentify(faceId: String) {
+        apiRequest.request(target: .identify(faceId: faceId), response: [FaceIdentifyResponse].self, errorResponse: ErrorResponse.self) { respose in
+            switch respose {
+            case .success(let faceIdentifyResponse):
+
+                // 最初の顔で判定
+                guard let candidate = faceIdentifyResponse.first?.candidates.first?.confidence else {
+                    print("顔が登録されていません")
+                    self.startRunning()
+                    return
+                }
+
+                let candidateInt = Int(candidate * 100)
+                print("信頼度は \(candidateInt)% です。")
+
+                if candidate > 0.9 {
+                    self.login()
+                } else {
+                    self.startRunning()
+                }
+
+            case .invalid(let errorResponse):
+                print(errorResponse)
+                self.startRunning()
+            case .failure(let error):
+                print(error)
+                self.startRunning()
+            }
+        }
     }
 
     private func startRunning() {
@@ -60,6 +119,10 @@ class FaceAuthViewController: UIViewController {
     private func stopRunning() {
         guard let faceTracker = faceTracker else { return }
         faceTracker.stopRunning()
+    }
+
+    func login() {
+        self.performSegue(withIdentifier: "gotoHome", sender: nil)
     }
 
     override func didReceiveMemoryWarning() {
