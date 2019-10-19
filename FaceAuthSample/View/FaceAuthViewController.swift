@@ -12,12 +12,12 @@ class FaceAuthViewController: UIViewController {
     @IBOutlet weak var alertLabel: UILabel!
 
     // 顔検出を行うクラス
-    private var faceTracker: FaceTracker?
+    private var faceTracker: FaceDetecer?
     // 顔の周りに表示する枠
     private let frameView = UIView()
     // 顔検出されたときの画像
     private var image = UIImage()
-    
+
     // APIリクエストを行うクラス
     private let apiRequest = APIRequest()
 
@@ -37,7 +37,7 @@ class FaceAuthViewController: UIViewController {
     private func setup() {
         frameView.layer.borderWidth = 3
         view.addSubview(frameView)
-        faceTracker = FaceTracker(view: cameraView, completion: {faceRect, image in
+        faceTracker = FaceDetecer(view: cameraView, completion: {faceRect, image in
             self.frameView.frame = faceRect
             self.image = image
             self.isInFrame(faceRect: faceRect)

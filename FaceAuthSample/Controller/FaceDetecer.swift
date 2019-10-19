@@ -1,7 +1,7 @@
 import UIKit
 import AVFoundation
 
-final class FaceTracker: NSObject {
+final class FaceDetecer: NSObject {
     private let captureSession = AVCaptureSession()
     private var videoDataOutput = AVCaptureVideoDataOutput()
     private var view: UIView
@@ -99,7 +99,7 @@ final class FaceTracker: NSObject {
     }
 }
 
-extension FaceTracker: AVCaptureVideoDataOutputSampleBufferDelegate {
+extension FaceDetecer: AVCaptureVideoDataOutputSampleBufferDelegate {
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         DispatchQueue.main.sync(execute: {
 
