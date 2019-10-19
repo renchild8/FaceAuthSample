@@ -93,7 +93,7 @@ class FaceAuthViewController: UIViewController {
                 }
 
                 let candidateInt = Int(candidate * 100)
-                self.alertLabel.text = "信頼度は \(candidateInt)% です。"
+                self.alertLabel.text = "信頼度は \(candidateInt)% です"
 
                 if candidate > 0.9 {
                     self.login()
