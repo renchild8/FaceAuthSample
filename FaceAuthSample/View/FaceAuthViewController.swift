@@ -62,7 +62,7 @@ class FaceAuthViewController: UIViewController {
             case .success(let faceDetectResponse):
 
                 guard let faceId = faceDetectResponse.first?.faceId else {
-                    print("顔認証に失敗しました")
+                    self.alertLabel.text = "顔認証に失敗しました"
                     self.startRunning()
                     return
                 }
@@ -87,13 +87,13 @@ class FaceAuthViewController: UIViewController {
 
                 // 最初の顔で判定
                 guard let candidate = faceIdentifyResponse.first?.candidates.first?.confidence else {
-                    print("顔が登録されていません")
+                    self.alertLabel.text = "顔が登録されていません"
                     self.startRunning()
                     return
                 }
 
                 let candidateInt = Int(candidate * 100)
-                print("信頼度は \(candidateInt)% です。")
+                self.alertLabel.text = "信頼度は \(candidateInt)% です。"
 
                 if candidate > 0.9 {
                     self.login()
