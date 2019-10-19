@@ -14,9 +14,9 @@ extension Target: TargetType {
     var path: String {
         switch self {
         case .detect:
-            return "detect/"
+            return "detect"
         case .identify:
-            return "identify/"
+            return "identify"
         }
     }
 
