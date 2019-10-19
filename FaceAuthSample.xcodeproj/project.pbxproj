@@ -159,6 +159,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F05DA4CF235BA0EA00B227B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F06C1610234A34600012C990 /* ViewController.swift */,
+				F0E918FD235212E900509CD1 /* FaceAuthViewController.swift */,
+				F05DA4CD235B9B0700B227B2 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F05DA4D0235BA11D00B227B2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F0E918FB2352109500509CD1 /* FaceTracker.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F06C1602234A34600012C990 = {
 			isa = PBXGroup;
 			children = (
@@ -186,10 +204,8 @@
 			children = (
 				F06C160E234A34600012C990 /* AppDelegate.swift */,
 				F059A998235B692100D773DA /* Model */,
-				F0E918FB2352109500509CD1 /* FaceTracker.swift */,
-				F06C1610234A34600012C990 /* ViewController.swift */,
-				F0E918FD235212E900509CD1 /* FaceAuthViewController.swift */,
-				F05DA4CD235B9B0700B227B2 /* HomeViewController.swift */,
+				F05DA4CF235BA0EA00B227B2 /* View */,
+				F05DA4D0235BA11D00B227B2 /* ViewModel */,
 				F06C1612234A34600012C990 /* Main.storyboard */,
 				F06C1615234A34610012C990 /* Assets.xcassets */,
 				F06C1617234A34610012C990 /* LaunchScreen.storyboard */,
